@@ -168,7 +168,7 @@
         </div>
     <?php
 
-    /** 
+    /**
      * Es 03
      * Dato due valori numerici, verificarne l'uguaglianza
      */
