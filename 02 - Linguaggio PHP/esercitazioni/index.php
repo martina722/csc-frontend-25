@@ -107,4 +107,29 @@
         echo "Tel: " . $persona_2["telefono"];
     endif;
 
+    // calcolare la media dei voti
+    $voti = [6, 7, 7.5, 4, 9, 8];
+    $somma = 0;
+    $num_voti = 0;
+
+    $somma = $somma + $voti[0];
+    $num_voti = 1;
+
+    $somma = $somma + $voti[1];
+    $num_voti = 2;
+
+    //oppure, più rapidamente, con un ciclo
+    for ($i = 0; $i < count ($voti); $i++) :
+        if ($voti[$i] > 0 || $voti[$i] <=10) :
+        $somma = $somma + $voti[$i];
+        $num_voti++;
+    endfor;
+
+    echo "La somma dei voti è: " . $somma;
+    echo "Il numero di voti è: " . count($voti);
+    echo "Il numero di voti validi è: " . $num_voti;
+
+    $media = $somma / $num_voti;
+    echo "LA media dei voti è: " . $media;
+
 ?>
